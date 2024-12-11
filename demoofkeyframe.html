@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo of Animation</title>
+    <style>
+
+        body{
+            background-color: #EBEDEE;
+        }
+        .box{
+            -border: 1px solid red;
+            width: 150px;height: 150px;
+            background-color: red;margin: auto;
+            animation-name: changeBg;
+            animation-duration: 10s;
+            -animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes changeBg {
+            0%{background-color: red;}
+            25%{background-color: green;}
+            50%{background-color: blue;}
+            75%{background-color: orange;}
+            100%{background-color: black;}
+        }
+
+        .image{
+            -border: 1px solid red;
+            position: absolute;
+            bottom: 0;right: 0;left: 0;
+        }
+        .image img{
+            -border: 1px solid red;
+            animation-name: runningCar;
+            animation-duration: 10s;
+        }
+
+        @keyframes runningCar {
+            0%{transform:translateX(0);}
+            25%{transform:translateX(25%);}
+            50%{transform:translateX(50%);}
+            75%{transform:translateX(75%);}
+            100%{transform:translateX(100%);}
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image">
+        <img src="https://i.pinimg.com/originals/6e/c8/fa/6ec8fa35800b339aa060d70d67edcf03.gif" alt="" width="250">
+    </div> 
+    <div class="box">
+
+    </div> 
+   
+</body>
+</html>

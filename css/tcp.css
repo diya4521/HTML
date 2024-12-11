@@ -1,0 +1,325 @@
+@font-face {
+    font-family: d;
+    src: url(/fonts/Kanit-Light.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: d;
+}
+.header{
+    -border: 1px solid red;
+    height: 100px;
+    box-shadow:0px 2px 5px silver;
+}
+.top{
+    -border: 1px solid red;
+    display: flex;
+    color: #fff;
+    background-color: #4869B1;
+    height: 25%;
+}
+.tleft{
+    -border: 1px solid red;
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 80px;
+    font-size: 15px;
+    padding-top: px;
+    
+}
+.tright{
+    -border: 1px solid black;
+    text-align: right;
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 80px;
+    font-size: 15px;
+    padding-top: px;
+}
+.botoom{
+    -border: 1px solid black;
+    height: 75%;
+    display: flex;
+}
+.logo{
+    width: 15%;
+    -border: 1px solid red;
+    box-sizing: border-box;
+    padding-left: 80px;
+}
+.menu{
+    -border: 1px solid red;
+    width: 65%;
+    box-sizing: border-box;
+
+}
+.menu ul{
+    list-style: none;
+    font-size: 20px; 
+    text-align: right;
+
+}
+.menu ul li{
+    display: inline-block;
+    padding: 5px 15px ;
+    
+} 
+.menu ul li a{
+    color:black;
+    text-decoration: none;
+}
+.butoon{
+    -border: 1px solid red;
+    width: 20%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-right:20xpx;
+}
+button{
+   
+    padding:  5px 15px ;
+    color: #fff;
+background: linear-gradient(
+    to right,
+    #4869B1 10%,
+    black 90%
+);
+    border-radius: 3px;
+  
+}
+button:hover{
+    background: linear-gradient(
+        to left,
+        #4869B1 10%,
+    black 90%
+
+    );
+}
+
+.slider{
+    -border: 1px solid red;
+    height: 500px;
+  background-image: url(/images/Slice\ 1.png);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+.about{
+    -border: 1px solid red;
+    height: fit-content;
+
+
+}
+.title{
+    -border: 1px solid red;
+    height: 10%;
+}
+.aboutb{
+    -border: 1px solid black;
+    display: flex;
+    padding-top: 50PX;
+
+}
+.bleft{
+    -border: 1px green solid ;
+    width:70%;
+    text-align: justify;
+    box-sizing: border-box;
+    padding-left: 50px;
+}
+.bright{
+    width: 30%;
+}
+
+  h5{
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  h4{
+    margin-bottom: 20px;
+  }
+  .bright img{
+
+    position: relative;
+   box-sizing: border-box;
+   padding-left: 30px;
+  }
+  .op{
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  .main{
+    -border: 1px solid red;
+    height: 480px;
+    background: url(https://tcpindia.in/assets/images/bg.svg);
+  }
+  .one{
+    width: 100%;
+   -border: 1px solid rgb(95, 6, 6);
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+  }
+  .a{
+   border: 1px dotted black;
+    height: 260px;
+    width: 260px;
+    background-color: #fff;
+    margin-left: 20px;
+  }
+  .aa{
+    -border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+
+  }
+  .aa img{
+    margin-top: 20px;
+    height: 10%;
+  }
+  .ab{
+    -border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    height: 20%;
+    font-size: 20px;
+
+  }
+
+  .ac{
+    -border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 30%;
+    font-size: 15px;
+
+  }
+  .ak{
+    margin-right: 30px;
+  }
+
+  .ad{
+    -border: 1px solid rgb(51, 126, 28);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+.round{
+    height: 40px;
+    width:40px;
+    padding: 3px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    -border: 1px solid black;
+    background-color: #fff;
+    box-shadow: 1px 2px 2px  silver;
+    margin-top: 10px;
+    
+  }
+  .oq:hover{
+    color: #4869B1;
+  }
+  .a:hover{
+    opacity: 1px;
+    transform: translateY(-15px);
+
+  }
+  .co{
+    -border: 1px solid red;
+    height: 500px;
+    box-sizing: border-box;
+  }
+  .m{
+    display: flex;
+    -border: 1px solid red;
+    justify-content: center;
+    margin-top: 20px;
+    justify-content: space-evenly;
+   
+    }
+  .z{
+    border: 1px solid #dddd;
+    height: 365px;
+    width: 272px;
+    border-radius: 5px;
+    
+  }
+  .za{
+    border: 1px solid #ddd;
+    height: 270px;
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+    
+
+    
+  }
+  .zb{
+    -border: 1px solid green;
+    height: 95px;
+    width: 100%;
+    border-radius: 0px 0px 5px 5px;
+  }
+  .k{
+    -border: 1px solid red;
+    width: 100%;
+    height: fit-content;
+    margin-top: 7px;
+    box-sizing: border-box;
+    padding-left: 15px;
+  }
+  
+  .j{
+    -border: 1px solid red;
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    padding-left: 15px;
+  }
+  .fa-calendar-check{
+    color: orangered;
+    margin-left: 2px;
+  }
+  .t{
+    -border: 1px solid red;
+    border-radius:50px ;
+    box-sizing: border-box;
+    padding: 2px 3px;
+    margin-left:20px;
+    background-color: #4869B1;
+    color: #fff;
+
+
+  }
+.bxo2{
+  -border: 1px solid red;
+}
+.at{ 
+  -border: 1px solid red;
+display: flex;
+justify-content: center;
+}
+.h{
+  padding: 10px 10px;
+}
+.box2{
+border: 1px solid red;
+height: 100px;
+}
+
+
+

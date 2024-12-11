@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/all.css">
+    <style>
+    .main2{
+        margin-top: 100px;
+        -border: 1px solid red;
+        height: fit-content;
+    }
+
+    .bottom{
+        -border: 1px solid green;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+    .Berry{
+        -border: 1px solid red;
+        width: 300px;
+        box-sizing: border-box;
+        box-shadow: 3px 2px 10px 10px rgba(192, 192, 192, 0.414);
+    }
+  
+    
+    .image, .image2,.image3,.image4{
+        -border: 1px solid ;
+        height: 40%;
+        background-image: url(/images/product-img-1.jpg);
+        background-size:contain ;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 30px;
+
+    }
+    .image2{
+        background-image: url(/images/product-img-2.jpg);
+        background-size:contain ;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .image4{
+        background-image: url(/images/product-img-5.jpg);
+        background-size:contain ;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .image3{
+        background-image: url(/images/product-img-3.jpg);
+        background-size:contain ;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .bi{
+        -border:  1px solid red;
+        height: fit-content;
+        font-family: diya;
+
+    }
+    .bi h3{
+        text-align: center;
+    }
+
+    .bi p{
+        text-align: center;
+        position: relative;
+        top: 10px;
+        font-size: 10px;
+        left: 30px;
+    }
+    .bi h4{
+        text-align: center;
+        font-size: 25px;
+        position: relative;
+        top: -30px;
+       
+    }
+
+    .fa-cart-shopping{
+        -border: 1px solid red;
+        padding: 7px;
+        border-radius:50px;
+        background-color: orange;
+        color: white;
+        font-size: 12px;
+        position: relative;
+        top: -290px;
+        left: 250px;
+        opacity: 0;
+    }
+
+    .fa-cart-shopping:hover
+    {
+        background-color: #051922;
+        color: orange;
+    }
+
+    .Berry:hover .fa-cart-shopping{
+        opacity: 1;
+    }   
+
+    </style>
+</head>
+<body>
+
+    
+    <div class="main2">
+
+        <div class="bottom">
+            <div class="Berry">
+                <div class="image"></div>
+                <div class="bi">
+                <h3>Strawberry</h3>
+                <p>Per Kg</p>
+                <h4>85$</h4>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            </div>
+    
+            <div class="Berry">
+                <div class="image2"></div>
+                <div class="bi">
+                <h3>Berry</h3>
+                <p>Per Kg</p>
+                <h4>70$</h4>
+    
+            <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            </div>
+
+            <div class="Berry">
+                <div class="image3"></div>
+                <div class="bi">
+                <h3>Lemon</h3>
+                <p>Per Kg</p>
+                <h4>35$</h4>
+    
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            </div>
+
+            <div class="Berry">
+                <div class="image4"></div>
+                <div class="bi">
+                <h3>Green Apple</h3>
+                <p>Per Kg</p>
+                <h4>45$</h4>
+    
+               <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            </div>
+
+        </div>
+    </div>
+    
+    
+</body>
+</html>

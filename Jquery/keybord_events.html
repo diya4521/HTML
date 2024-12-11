@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo of keybord_events</title>
+    <style>
+        div{
+            margin-top:10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="divRed" style="height: 100px;width:100px;padding:10px;background-color: red;"></div>
+    <button id="btnRed">Hide/Show</button>
+    <div id="divYellow" style="height: 100px;width:100px;padding:10px;background-color: yellow;"></div>
+    <button id="btnYellow">Hide/Show</button>
+    <div id="divGreen" style="height: 100px;width:100px;padding:10px;background-color: green;"></div>
+    <button  id="btnGreen">Hide/Show</button>
+    <div id="divBlue" style="height: 100px;width:100px;padding:10px;background-color: blue;"></div>
+    <button id="btnBlue">Hide/Show</button>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#divRed").toggle();
+        });
+      $("#btnRed").click(function()
+    {
+     $("#divRed").toggle();   
+    });
+
+    $(document).keypress(function(){
+        alert('demo')
+    });
+
+    </script>
+
+</body>
+</html>

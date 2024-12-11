@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.box1{
+            height: 400px;
+            background-size: cover;
+            -border: 1px solid red;
+            background-image:linear-gradient(rgba(163, 3, 120, 0.5),rgba(4, 138, 169, 0.5)),
+            url(/images/htmlweb21images.webp);
+            display: flex;
+        }
+        .left{
+            border: 1px solid red;
+            width: 60%;
+        }
+        .boxleft{
+            border: 1px solid ;
+            height: 80%;
+            backdrop-filter: blur(5px);
+            width: 80%;
+            margin: 40px auto;
+        }
+        .three{
+            border: 1px solid red;
+            width: 30%;
+        }
+        .four{
+            border: 1px solid red;
+            width: 30%;
+        }
+        .textbox{
+            padding: 15px 15px;
+            color: rgb(110, 109, 109);
+            
+        }
+        .text_box{
+           padding:15px 15px;
+           text-align: center;
+           background-color: rgba(0, 119, 255, 0.272);
+            color:white;
+            
+        }
+        .box_text{
+            -border: 1px solid red;
+            position: relative;
+            width: fit-content;
+            left:60px;
+            top: 70px;
+            color: white;
+        }
+        li {
+            color: white;
+            text-decoration: none; 
+            list-style: none; 
+            
+            }
+
+    </style>
+</head>
+<body>
+
+    <div class="box1">
+        <div class="left">
+            <div class="boxleft">
+                <div class="box_text">
+                    <h1>Sign up for email alerts</h1>
+                    <p>Stay current with our latest insights</p>
+                    <input type="text" value="Enter Email Here" class="textbox">
+                    <input type="text" value="Submit" class="text_box">
+                </div>
+            </div>
+        </div>
+        <div class="three">
+            <li>Contact Us</li>
+            <li>FAQ</li>
+            <li>Privacy Policy</li>
+            <li>Terms of Use</li>
+            <li>Globel Office</li>
+            <li>Locle Office</li>
+        </div>
+        <div class="four"></div>
+    </div>
+    
+</body>
+</html>

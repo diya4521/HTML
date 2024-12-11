@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Menu CSS</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        header{
+            -border: 1px solid red;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 5px 2px 2px silver;
+        }
+
+        .menu ul{
+            -border: 1px solid red;
+            display: flex;
+            padding: 10px;
+        }
+
+        .menu ul li{
+            list-style: none;
+            margin: 5px;
+        }
+
+        .menu ul li a{
+            text-decoration: none;
+            font-size: 20px;
+              color: black;
+        }
+
+        @media(max-width:575px){
+            header{
+                -border: 1px solid red;
+                height: 60px;
+            }
+            .logo{
+                border: 1px solid green;
+                width: 20%;
+            }
+            .menu{
+                height: 520px;
+                position: relative;
+                top: 60px;
+                left: -79.6%;
+                width: 20%;
+                border: 1px solid red;
+            }
+            .menu ul{
+                display: block;
+            }
+            menu ul li a{
+                margin-left: -20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Logo</h1>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+</body>
+</html>

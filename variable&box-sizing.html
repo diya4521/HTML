@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable & Box-Sizing</title>
+    <style>
+
+        :root{--textcolo-color:pink}
+
+        h1{
+            color: var(--textcolo-color);
+        }
+
+        .box{
+            border: 1px solid pink;
+            padding: 20px;
+            box-sizing: border-box;
+            height: 300px;width: 300px;
+            color: var(--textcolo-color);
+
+        }
+
+
+        button{
+            color: var(--textcolo-color);
+            border: 1px solid pink;
+            padding: 5px 15px;
+            background-color: #fff;
+        }
+
+        button:hover{
+            color: var(--textcolo-color);
+            border: 1px solid pink;
+            padding: 5px 15px;
+            background-color: pink;
+            color: white;
+            cursor: pointer;
+        }
+
+        p{
+            color: var(--textcolo-color);
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>hello</h1>
+
+    <div class="box">
+        India
+    </div>
+
+    <p>morninig</p>
+
+    <button>clikc me</button>
+
+</body>
+</html>

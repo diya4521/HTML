@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div>
+    <input type="text" id="data">
+    <input type="color" id="clr">
+    <button id="btn">Click Here</button>
+</div>
+<div id="content" style="padding:10px;border:1px solid red;margin-top: 10px;">
+
+</div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <script>
+   $("#btn").click(function(){
+      var myText = $("#data").val();
+      var myClr = $("#clr").val();
+      $("#content").css('color',myClr);
+      $("#content").append(myText);
+      
+   });
+  
+  </script>
+</body>
+</html>

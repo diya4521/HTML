@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagination font-size</title>
+    <link rel="stylesheet" href="css/all.css">
+
+    <style>
+        .main{
+            display: flex;
+
+            margin: 10px;
+        }
+        .box1,.box2{
+            height: 34px;
+            width: 70px;
+            box-sizing: border-box;
+            padding-left: 25px;
+            padding-top: 9px;
+            border: 1px solid;
+        }
+        #number{
+            height: 28px;
+            width: 40px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <input type="text" id="data">
+
+    <div class="main">
+        <div class="box2"></i><i class="fa-solid fa-minus"></i></div>
+        <input type="text" value="0" id="number">
+        <div class="box1"><i class="fa-solid fa-plus"></i></div>
+    </div>
+
+    <button id="btn">Click Here</button>
+
+    <div id="content" style="padding:10px;border:1px solid red;margin-top: 10px;"></div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+
+    <script>
+
+        $("#btn").click(function(){
+            var myText = $("#data").val();
+            $("#content").append(myText);
+        });
+
+          $(".box1").click(function(){
+    var size = $("#number").val();
+    var s = parseInt(size)+1
+    $("#number").val(s);
+    $("#content").css('font-size',s+"px");
+    });
+
+    $(".box2").click(function(){
+    var size = $("#number").val();
+    var s = parseInt(size)-1
+    $("#number").val(s);
+    $("#content").css('font-size',s+"px");
+    });
+    </script>
+    
+</body>
+</html>

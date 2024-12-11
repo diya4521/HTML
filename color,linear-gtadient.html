@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo of linear-gradient</title>
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .box_1{
+            -border: 1px solid red;
+            height: 300px;
+            background-image: linear-gradient(red,yellow,green);
+        }
+        .box_2{
+            -border: 1px solid red;
+            height: 300px;
+            background-image: linear-gradient(to right,red,yellow,green);
+        }
+        .box_3{
+            -border: 1px solid red;
+            height: 300px;
+            background-image: linear-gradient(to left,red,yellow,green);
+
+        }
+        .box_4{
+            -border: 1px solid red;
+            height: 300px;
+            background-image: linear-gradient(45deg,red,yellow,green);
+
+        }
+        .box_5{
+            -border: 1px solid red;
+            height: 300px;
+            background-image: linear-gradient(red 20%,yellow 50%,green);
+
+        }
+
+        .box_6{
+            -border: 1px solid red;
+            height: 300px;
+            background-image: repeating-linear-gradient(red,yellow 10%,green 20%) ;
+        }
+
+        .box_7{
+            height: 300px;
+            background-image: radial-gradient(white,#ddd,black);
+        }
+        .box_8{
+            height: 300px;
+            width: 300px;
+            background-image:repeating-radial-gradient(white,#ddd 5%,black 10%);
+        }
+        .box_9{
+            height: 300px;
+                background-image: radial-gradient(farthest-side at 50% 35%,white,#ddd,black);
+        }
+        .box_10{
+            height: 300px;
+            background-image: radial-gradient(farthest-corner at 5% 25%,white,#ddd,black);
+        }
+        .box_11{
+            height: 300px;
+            background-image: radial-gradient(closest-corner at 55% 45% ,white,#ddd,black);
+            -background-image: radial-gradient(closest-side at 5% 25%,white,#ddd,black);
+        }
+        .box_12{
+            height: 300px;
+            background-image: radial-gradient(closest-side at 5% 25%,white,#ddd,black);
+        }
+
+      
+    </style>
+</head>
+<body>
+
+    <div class="box_1"></div>
+    <div class="box_2"></div>
+    <div class="box_3"></div>
+    <div class="box_4"></div>
+    <div class="box_5"></div>
+    <div class="box_6"></div>
+    <div class="box_7"></div>
+    <div class="box_8"></div>
+    <div class="box_9"></div>
+    <div class="box_10"></div>
+    <div class="box_11"></div>
+    <div class="box_12"></div>
+
+
+    
+</body>
+</html>

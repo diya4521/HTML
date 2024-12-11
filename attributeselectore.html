@@ -1,0 +1,88 @@
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+
+
+        a[target="_self"]{
+            color: red;
+        }
+        a[target="_blank"]{
+            color: rgb(251, 0, 255);
+        }
+        a{
+            color: rgb(89, 226, 43);
+        }
+
+
+
+        img{
+            height: 200px;width: 200px;
+        }
+        img[title~="roseflower"]{
+            border: 3px solid purple;
+        }
+        img[title~="flower"]{
+            border: 3px solid rgb(0, 23, 128);
+        }
+        img[title~="lotues"]{
+            border: 3px solid rgb(128, 0, 102);
+        }
+
+
+        [class|="top"]{
+            background-color: cornflowerblue;
+        }
+        [class|="top-title"]{
+            background-color: rgb(123, 237, 100);
+        }
+        [class|="topheading"]{
+            background-color: rgb(237, 100, 219);
+        }
+
+        input[type="text"]{
+            background-color:blueviolet ;
+        }
+        input[type="text"]:hover{
+            background-color: palevioletred;
+        }
+       
+        input[type="text"]:focus{
+            background-color: yellow;
+        }
+        input[type="password"]{
+            background-color:blueviolet ;
+        }
+        input[type="password"]:hover{
+            background-color: palevioletred;
+        }
+       
+        input[type="password"]:focus{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+
+    <a href="#" target="_blank">Link 1</a>
+    <a href="#" target="_self">Link 2</a>
+    <a href="#">Link 3</a>
+
+
+    <img src="/images/roseflower.jpg" title="roseflower">
+    <img src="/images/flower.jpg" title="flower">
+    <img src="/images/lotues.jpg" title="lotues">
+
+    <h2 class="top-content">Content</h2>
+    <p class="top-title">Title Here</p>
+    <p class="topheading">Heding</p>
+
+    <input type="text">
+    <input type="password">
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Of Transfrom</title>
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .box1{
+            border: 1px solid blueviolet;
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+            transition: 1s;
+            margin-right: 100px;
+            margin-left: 100px;
+        }
+        .box1:hover{
+            transform: translate(50px,50px);
+            -transform: translateX(50px);
+            -transform: translateY(50px);
+        }
+
+        .box2{
+            border: 1px solid rgb(46, 43, 226);
+            height: 200px;
+            width: 200px;
+            background-color: rgb(43, 49, 226);
+            transition: 1s;
+            margin-right: 100px;
+        }
+        .box2:hover{
+            -transform: rotate(360deg);
+            -transform: rotateY(360deg);
+            transform: rotateX(360deg);
+        }
+        .box3{
+            border: 1px solid rgb(226, 43, 195);
+            height: 200px;
+            width: 200px;
+            background-color: rgb(226, 43, 195);
+            transition: 1s;
+            margin-right: 100px;
+        }
+        .box3:hover{
+            -transform:scale(0.5);
+            -transform:scaleX(0.5);
+            transform:scaleY(0.5);
+        }
+        .box4{
+            border: 1px solid rgb(43, 174, 226);
+            height: 200px;
+            width: 200px;
+            background-color: rgb(43, 174, 226);
+            transition: 1s;
+            margin-right: 100px;
+        }
+        .box4:hover{
+            -transform:Skew(30deg);
+            transform:scaleX(0.5);
+            -transform:scaleY(0.5);
+        }
+        .box5{
+            border: 1px solid brown;
+            height: 200px;
+            width: 200px;
+            background-color: brown;
+            transition: 1s;
+            margin-right: 100px;
+        }
+        .box5:hover{
+           transform: matrix(1.5,0,0,1,50,100);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box1">translate</div>
+    <div class="box2">Rotate</div>
+    <div class="box3">Scale</div>
+    <div class="box4">Skew</div>
+    <div class="box5">Skew</div>
+
+</body>
+</html>

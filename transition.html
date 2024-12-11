@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Demo Of Transition</title>
+    <style>
+
+        body{
+            display: flex;
+        }
+        .box{
+            height: 400px;
+            width: 400px;
+            background-image:url(/images/images3.jpg) ;
+            transition-delay:1s ;
+            transition-duration:3s ;
+            transition-property: width;
+            transition-timing-function:inherit ;
+        }
+
+        .box:hover{
+            width: 600px;
+        }
+
+        .box1{
+            height: 400px;
+            width: 400px;
+            background-image:url(/images/images4.jpg) ;
+            background-size: cover;
+            transition: ;
+            transition-delay:1s ;
+            transition-duration:3s ;
+            transition-property: height;
+            transition-timing-function:inherit ;
+        }
+
+        .box1:hover:hover{
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+    
+    <div class="box1"></div>
+</body>
+</html> 

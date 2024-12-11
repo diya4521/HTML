@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo of pagination</title>
+    <link rel="stylesheet" href="css/all.css">
+    <style>
+
+        .box{
+            -border: 1px solid red;
+            width: fit-content;
+            margin: 100px auto;
+        }
+
+        h1{
+            margin-left: 170px;
+        }
+
+        ul{
+            -border: 1px solid grey;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        li{
+            display: inline-block;
+            border: 2px solid #C4CDD5;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+
+        li:nth-child(2){
+            border: 2px solid #4200FF;
+            color: #4200FF;
+        }
+        li:first-child{
+            border: 2px solid #C8CED5;
+            color: #E1E6EA;
+            background-color: #C8CED5;
+        }
+        li:last-child{
+            color: #E1E6EA;
+        }
+        ul li:hover{
+            border: 2px solid #4200FF;
+            color: #4200FF;
+            background-color: #C8CED5;
+        }
+     </style>
+</head>
+<body>
+
+    <div class="box">
+
+        <h1>Pagination</h1>
+
+    <ul>
+        <ul>
+            <li><a href=""><i class="fa-solid fa-chevron-left"></i></a></li>
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href=""><i class="fa-solid fa-ellipsis"></i></a></li>
+            <li><a href="">9</a></li>
+            <li><a href="">10</a></li>
+            <li><a href=""><i class="fa-solid fa-chevron-right"></i></a></li>
+        </ul>
+    </ul>
+</div>
+
+    
+</body>
+</html>

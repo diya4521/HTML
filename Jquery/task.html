@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo of jquery</title>
+    <style>
+        #div1{
+            background-color: blueviolet;
+            height: 100px;
+            width: 100px;
+            }
+    </style>
+</head>
+<body>
+
+    <div>
+        <button class="btn1">top-left</button>
+        <button class="btn2">top-center</button>
+        <button class="btn3">top-right</button>
+
+        <button class="btn4">center -left</button>
+        <button class="btn5">center -center</button>
+        <button class="btn6">center -right</button>
+
+        <button class="btn7">buttom-left</button>
+        <button class="btn8">buttom-center</button>
+        <button class="btn9">buttom-right</button>
+  
+        <div id="div1">
+
+
+        </div>
+    </div>
+
+  
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>    
+
+        $(".btn1").click(function(){
+            $("#div1").attr('style','background-color:blueviolet; height:100px; width:100px; transition: ease-in 1s;');
+        });
+
+        $(".btn2").click(function(){
+            $("#div1").attr('style','background-color:blueviolet; height:100px; width:100px; transition: ease-in 1s; left: 45%; position: relative; ');
+        });
+
+        $(".btn3").click(function(){
+            $("#div1").attr('style','background-color:blueviolet; height:100px; width:100px; transition: ease-in 1s; margin-left: 90%;');
+        });
+
+        $(".btn4").click(function(){
+            $("#div1").attr('style','background-color:blueviolet; height:100px; width:100px; transition: ease-in 1s; margin-top:200px;');
+        });
+
+        $(".btn5").click(function(){
+            $("#div1").attr('style','background-color:blueviolet; height:100px; width:100px; transition: ease-in 1s; margin-left: 45%;margin-top:200px; ');
+        });
+
+        $(".btn6").click(function(){
+            $("#div1").attr('style','background-color:blueviolet; height:100px; width:100px; transition: ease-in 1s; margin-left: 90%;margin-top:200px;');
+        });
+
+        $(".btn7").click(function(){
+            $("#div1").attr('style','background-color:blueviolet; height:100px; width:100px; transition: ease-in 1s; margin-top:450px;');
+        });
+
+        $(".btn8").click(function(){
+            $("#div1").attr('style','background-color:blueviolet; height:100px; width:100px; transition: ease-in 1s; margin-left: 45%;margin-top:450px; ');
+        });
+
+        $(".btn9").click(function(){
+            $("#div1").attr('style','background-color:blueviolet; height:100px; width:100px; transition: ease-in 1s; margin-left: 90%;margin-top:450px;');
+        });
+
+
+    </script>
+    
+</body>
+</html>

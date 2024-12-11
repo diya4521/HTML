@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo of specificity</title>
+    <style> 
+
+    *{
+        color: cornflowerblue ;
+    }
+    
+        body{
+            color: orange;
+        }
+        h1
+        {
+            color: red;
+        }
+        .hello{
+            color: rgb(32, 94, 160);
+        }
+        h1.hello{
+            color: darkblue;
+        }
+        #demo{
+            color: blue;
+        }
+        h1#demo{
+            color: rgb(111, 0, 139)!important ;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1 class="hello" id="demo" style="color: blueviolet;">hello,good morning</h1>
+    
+</body>
+</html>

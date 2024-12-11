@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo of Counter</title>
+    <style>
+        body{
+            counter-reset: section;
+        }
+        h2{
+            counter-reset: subsection;
+        }
+        h2::before{
+            counter-increment: section;
+            content: "Topic " counter(section) ".";
+        }
+        h4::before{
+            counter-increment: subsection;
+            content: counter(section) "." counter(subsection) " ";
+        }
+    </style>
+</head>
+<body>
+
+    <h2>HTML</h2>
+    <h4>Structure of HTML</h4>
+    <h4>Formating tags</h4>
+    <h4>Attributes</h4>
+    <h4>Structure of HTML</h4>
+    <h4>Formating tags</h4>
+    <h4>Attributes</h4>
+    <h4>Structure of HTML</h4>
+    <h4>Formating tags</h4>
+    <h4>Attributes</h4>
+    <h4>Structure of HTML</h4>
+    <h4>Formating tags</h4>
+    <h4>Attributes</h4>
+    <h2>CSS</h2>
+    <h4>Types of CSS</h4>
+    <h4>Listing tags</h4>
+    <h2>Bootstarp</h2>
+    <h4>Hello</h4>
+    
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout 1</title>
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .header{
+            height: 50px;
+            background-color: cornflowerblue;
+        }
+        .main{
+            height: 300px;
+            display: flex;
+        }
+        .left{
+            -border: 1px solid red;
+            width: 70%;
+            display: flex;
+        }
+        .a{
+            height: 100%;
+            background-color: blueviolet;
+            width: 20%;
+        }
+        .b{
+            height: 100%;
+            background-color: rgb(226, 43, 195);
+            width: 60%;
+        }
+        .c{
+            height: 100%;
+            background-color: blueviolet;
+            width: 20%;
+        }
+        .right{
+            -border: 1px solid red;
+            width: 30%;
+        }
+        .d{
+            height: 50%;
+            width: 100%;
+            background-color: rgb(43, 205, 226);
+        }
+        .e{
+            height: 50%;
+            width: 100%;
+            background-color: rgb(43, 58, 226);
+        }
+
+        .main2{
+            height: 200px;
+            display: flex;
+        }
+        .aa{
+            height: 100%;
+            width: 50%;
+            background-color: rgb(41, 71, 153);
+        }
+        .s{
+            width: 50%;
+        }
+        .ab{
+            height: 50%;
+            background-color: cadetblue;
+        }
+        .ac{
+            height: 50%;
+            background-color: rgb(160, 95, 143);
+        }
+        .main3
+        {
+            height: 200px;
+            background-color: brown;
+        }
+
+        .footer{
+            height: 50px;
+            background-color: rgb(127, 9, 156);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">Header</div>
+
+    <div class="main">
+
+        <div class="left">
+            <div class="a">1</div>
+            <div class="b">2</div>
+            <div class="c">3</div>
+        </div>
+
+        <div class="right">
+            <div class="d">4</div>
+            <div class="e">5</div>
+        </div>
+
+    </div>
+    
+    <div class="main2">
+        <div class="aa">A</div>
+        <div class="s">
+        <div class="ab">B</div>
+        <div class="ac">C</div>
+        </div>
+    </div>
+    
+    <div class="main3">
+        D
+    </div>
+
+    <div class="footer">Footer</div>
+
+</body>
+</html>

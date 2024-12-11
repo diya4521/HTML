@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    -border: 1px solid red;
+    display: flex; 
+}
+.left{
+    -border: 1px solid red;
+    width:20% ; 
+    font-size: 40px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-top: 10px;
+
+}
+.menu{
+    -border: 1px solid red;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.menu ul{
+    list-style: none;
+    
+}
+.menu ul li{
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 17px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.right{
+    -border: 1px solid rebeccapurple;
+    width: 30%;
+    display: flex;
+    box-sizing: border-box;
+    padding-left: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.a{
+    -border: 1px solid red;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    font-size: 20px;
+}
+.b{
+    -border: 1px solid black;
+    height: fit-content;
+    min-width: min-content;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: px;
+    background-color: darkblue;
+    color: #fff;
+    border-radius: 5px;
+}
+.fa-gem{
+font-size: 30px;
+
+}
+.men{
+    -border: 1px solid red;
+    height: 400px;
+    background-color: #FBFBFB;
+    display: flex;
+}
+.lefta{
+    -border: 1px solid black;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+.lefta h2{
+    font-size: 33px;
+}
+.box{
+    -border: 1px solid red;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: darkblue;
+    color: #fff;
+}
+.righta {
+box-sizing: border-box;
+padding-top: 50px;
+padding-left: 60px;
+}
+h3{
+    text-align: center;
+    font-size: 30px;
+}
+p{
+    text-align: center;
+}
+.main
+{
+    -border: 1px solid red ;
+    height: 200px;
+}
+.div1{
+    -border: 1px solid red ;
+    height: 200px;
+    width: 33%;
+    float: left;
+    background-image: url(https://png.pngtree.com/png-clipart/20230822/original/pngtree-message-icon-design-vector-picture-image_8161052.png);
+    background-size: 90% 99%;
+
+}
+.div2{
+    -border: 1px solid red ;
+    height: 200px;
+    width: 33%;
+    float: left;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/033/539/394/original/light-bulb-minimalist-logo-design-vector.jpg);
+    background-size: 100% 100%;
+
+}
+.div3{
+    -border: 1px solid red ;
+    height: 200px;
+    width: 33.5%;
+    float: left;
+    background-image: url(https://i.pinimg.com/474x/9b/92/2c/9b922cfb53582455947994310ee13cab.jpg);
+    background-size: 90% 100%;
+}

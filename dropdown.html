@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop_Down</title>
+    <style>
+
+       .dropdown{
+        position: relative;
+       }
+      .drop_btn{
+        background-color: rgb(13, 207, 13);
+        color: white;
+        border: 0;
+        padding: 10px 25px;
+        cursor: pointer;
+      }
+      .dropdown_menu{
+        position: absolute;
+        width: 200px;
+        padding: 10px;
+        background-color: rgb(150, 221, 247);
+        display: none;
+      }
+      .dropdown_menu a{
+        display: block;
+        padding: 5px;
+        margin-bottom: 5px;
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+      }
+      .dropdown:hover .dropdown_menu{
+        display: block;
+
+      }
+    </style>
+</head>
+<body>
+
+    <div class="dropdown">
+        <button class="drop_btn">Dropdown</button>
+        <div class="dropdown_menu">
+            <a href="#">item 1</a>
+            <a href="#">item 2</a>
+            <a href="#">item 3</a>
+        </div>
+    </div>
+    
+</body>
+</html>

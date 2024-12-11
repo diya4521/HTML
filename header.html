@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsiv headre</title>
+    <style>
+        .main{
+            box-shadow: 2px 2px 10px silver;
+      display: flex;
+      height: 70%;
+
+    }
+    .mainleft{
+        -background-color: blueviolet;
+      -border: 1px solid red;
+      width: 30%;
+      font-size: 30px;
+    }
+    .menu{
+      -border: 1px solid red;
+      width: 70%;
+      box-sizing: border-box;
+      background-color: aqua;
+      padding-right: 20px;
+    }
+    .menu ul{
+      font-size: 20px;
+      text-align: center;
+      
+    }
+    .menu ul li{
+      display: inline-block;
+      padding: 5px ;
+      
+    }
+    @media(max-width:375px){
+
+        .main{
+            display: block;
+        }
+
+        .mainleft{
+            text-align: center;
+            width: 100%;
+        }
+
+        .menu{
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+    }
+    @media(min-width:376px) and (max-width:767px){
+       .main{
+            display: block;
+        }
+
+        .mainleft{
+            text-align: center;
+            width:  100%;
+        }
+        .menu{
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+      
+    }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="mainleft">LOGO</div>
+        <div class="menu">
+         
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Services</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </div>
+    
+        
+
+
+</body>
+</html>

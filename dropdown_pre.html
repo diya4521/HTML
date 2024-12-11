@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .drop_btn{
+            background-color:blueviolet;
+            padding: 10px;
+            color:white;
+        }
+        .menu{
+            position:relative;
+            top:3px;
+            width: 65px;
+            background-color:aqua;
+            padding:10px;
+            display:none;
+        }
+        a{
+            display: block;
+            padding: 5px;
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+        }
+        .dropdown:hover .menu{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dropdown">
+        <button class="drop_btn">Dropdown</button>
+        <div class="menu">
+            <a href="#">list-1</a>
+            <a href="#">list-2</a>
+            <a href="#">list-3</a>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+    <style>
+        .main{
+            display: flex;
+
+            margin: 10px;
+        }
+        .box1,.box2{
+            height: 34px;
+            width: 70px;
+            box-sizing: border-box;
+            padding-left: 25px;
+            padding-top: 9px;
+            border: 1px solid;
+        }
+        #number{
+            height: 28px;
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <input type="text" id="data"> 
+    <input type="color" id="clr">
+    
+    <select id="select_main">
+        <option value="10px">10px</option>
+        <option value="20px">20px</option>
+        <option value="30px">30px</option>
+        <option value="40px">40px</option>
+        <option value="50px">50px</option>
+    </select>
+
+    <button id="btn">Click Here</button>
+
+        <div class="main">
+            <div class="box2"></i><i class="fa-solid fa-minus"></i></div>
+            <input type="text" value="0" id="number">
+            <div class="box1"><i class="fa-solid fa-plus"></i></div>
+        </div>
+    
+
+</div>
+<div id="content" style="padding:10px;border:1px solid red;margin-top: 10px;">
+
+</div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  
+  <script>
+
+   $("#btn").click(function(){
+
+        var myText = $("#data").val();
+        $("#content").append(myText);
+
+        var myClr = $("#clr").val();
+        $("#content").css('color',myClr);
+     
+        var FontSize = $("#select_main").val();
+        alert(FontSize);
+        $("#content").css('font-size',FontSize);
+        
+   });
+
+   $(".box1").click(function(){
+    var size = $("#number").val();
+    var s = parseInt(size)+1
+    $("#number").val(s);
+    $("#content").css('font-size',s+"px");
+    });
+
+    $(".box2").click(function(){
+    var size = $("#number").val();
+    var s = parseInt(size)-1
+    $("#number").val(s);
+    $("#content").css('font-size',s+"px");
+    });
+  
+  
+  </script>
+</body>
+</html>
+

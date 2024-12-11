@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class & pseudo element</title>
+    <style>
+
+        a:link{
+            color: rgb(57, 51, 228);
+        }
+        a:visited{
+            color: blueviolet;
+        }
+        a:hover{
+            color: darkblue;
+        }
+        a:active{
+            color: rgb(203, 10, 155);
+        }
+        input:focus{
+            background-color: yellow;
+            height: 20px;
+            width: 165px;
+            border:yellow;
+        }
+
+        ul li:first-child{
+            color: rgb(255, 0, 183);
+        }
+        ul li:last-child{
+            color: rgb(221, 0, 255);
+        }
+        ul li:nth-child(2){
+            color: palevioletred;
+        }
+        ul li:nth-child(3){
+            color: rgb(126, 112, 216);
+        }
+        ul li:nth-child(4){
+            color: rgb(216, 209, 112);
+        }
+
+        p::first-line{
+            color: red;
+            font-size: 20px;
+            background-color: green;
+        }
+        h1::after{
+            -content: url(images/images3.jpg);
+            content: ' TCP';
+            color: palevioletred;
+            font-size: 40px;
+        }
+        ul li.A::marker{
+            color: rgb(230, 0, 255);
+        }
+        ul li.B::marker{
+            color: rgb(0, 68, 255);
+        }
+        ul li.C::marker{
+            color: rgb(0, 255, 123);
+        }
+        p::selection{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="">link here</a>
+
+    
+
+    <ul>
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+        <li>list 5</li>
+    </ul>
+
+    <!-- pseudo_element -->
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nemo ipsam blanditiis cupiditate totam distinctio doloribus, sapiente eos officiis explicabo ducimus culpa, est debitis ad labore repellendus. Deserunt minus eveniet harum quis earum, optio pariatur nulla, porro sed ullam odit. Ipsa, enim eveniet, amet soluta consequatur quasi quisquam magnam quas quaerat quis beatae tempore. </p>
+    <h1>hello</h1>
+
+    
+
+    <ul>
+        <li class="A">list 1</li>
+        <li  class="B">list 2</li>
+        <li  class="C">list 3</li>
+        
+    </ul>
+
+    <input type="text">
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo of collaeps & fudein</title>
+    <style>
+        .main{
+           width: 60%;
+           margin: auto;
+        }
+        .titel{
+            padding: 10px;
+            background-color: aqua;
+        }
+        .container{
+            padding: 10px;
+            display: none;
+        }
+        .cl
+        {
+            margin-bottom: 5px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="cl">
+            <div class="titel" onclick="data(1);">Collaeps title 1</div>
+                <div class="container" id="cd1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nulla doloribus ullam, odio voluptas inventore ipsa dolor vero rem itaque perferendis, aspernatur hic quasi placeat architecto minus quae! Et, blanditiis.
+                </div>
+        </div>
+
+        <div class="cl">
+            <div class="titel" onclick="data(2);">Collaeps title 2</div>
+                <div class="container" id="cd2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt non quibusdam, nobis voluptas consequatur aspernatur doloremque, laboriosam quidem doloribus a provident! Soluta laboriosam sapiente neque excepturi aliquam sunt, consequuntur iure?
+                </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+
+
+
+    <script>
+        function data(a)
+        {
+            var clID = "#cd"+a;
+            $("container").removeAttr('styele');
+            $(clID).fadeToggle(1000);
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo of Image Style</title>
+
+    <style>
+
+        .radiua{
+            border-radius: 50%;
+            border: 1px solid #ddd;
+            padding: 5px; 
+            margin-right: 100px;
+        }
+
+        .border{
+            border: 1px solid #ddd;
+            padding: 5px; 
+            border-radius:5px ;
+        }
+        .box{
+            -border: 1px solid red;
+            width: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+        .overlay-text{
+            -border: 1px solid green;
+            position: absolute;
+            left: 0%;
+            -top: 0;
+            bottom: -75%;
+            right: 0;
+            padding: 15px;
+            color: black;color: white;
+            transition: 1s;
+            box-sizing: border-box;
+        }
+        .box:hover .overlay-text{
+            bottom: 0;
+            -left: 100%;
+        }
+        .box2{
+            -border: 1px solid red;
+            width: 300px;
+            position: relative;
+            -overflow: hidden;
+        }
+        .overlay-text_{
+            -border: 1px solid green;
+            position: absolute;
+            left: 0%;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            padding: 15px;
+            background-color: rgba(0,0,0,1);color: #fff;
+            transition: 1s;
+            width: 100%;
+            box-sizing: border-box;
+            z-index: -1;
+        }
+        .box2:hover .overlay-text_{
+            -bottom: 0;
+            left: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <img class="radiua" src="images/imagestyle_img.avif" width="350" height="350"  alt="">
+
+    <img class="border" src="images/imagestyle_img.avif" width="350" height="350"  alt="">
+
+    <div class="box">
+        <img src="images/mas.jpeg" width="100%" height="" alt="">
+        <div class="overlay-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aliquid itaque tempora velit accusantium non harum exercitationem vitae, ipsum repudiandae sint vero placeat, obcaecati, corrupti neque nisi autem veniam repellat.  
+        </div>
+    </div>
+    <div class="box2">
+        <img src="images/images4.jpg" width="100%" height="" alt="">
+        <div class="overlay-text_">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aliquid itaque tempora velit accusantium non harum exercitationem vitae, ipsum repudiandae sint vero placeat, obcaecati, corrupti neque nisi autem veniam repellat.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aliquid itaque tempora velit accusantium non harum exercitationem vitae, ipsum repudiandae sint vero placeat, obcaecati, corrupti neque nisi autem veniam repellat.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aliquid itaque tempora velit accusantium non harum exercitationem vitae, ipsum repudiandae sint vero placeat, obcaecati, corrupti neque nisi autem veniam repellat.
+        </div>
+    </div>
+   
+   
+</body>
+</html>

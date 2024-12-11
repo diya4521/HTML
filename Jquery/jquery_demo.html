@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Demo</title>
+  
+</head>
+
+<body>
+   <div>
+    <h1 class="p2 line1">Title</h1>
+    <p class="p2 line1" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolorum unde sint placeat exercitationem commodi perferendis modi, dicta quisquam repudiandae nam? Ipsam nobis dolorem blanditiis eligendi aperiam veritatis. Architecto, quis?</p>
+    <input type="text" name="name" >
+    
+    <hr>
+    <p class="p2 line1" href="">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, voluptas. Autem eos soluta iure, rerum voluptas, quo ipsum nostrum sit repellat nemo, eligendi sed quos cumque molestiae laborum omnis blanditiis!
+    </p>
+    <a href="#">Link</a>
+    <button id="btn" class="line1" href>Click Here</button>
+    <hr>
+    <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+    </ul>
+    <hr>
+    <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+    </ul>
+    <hr>
+    <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+    </ul>
+    <hr>
+    <table>
+        <tr>
+          <th>Column 1</th>
+          <th>Column 2</th>
+          <th>Column 3</th>
+        </tr>
+        <tr>
+          <td>Row 1, Cell 1</td>
+          <td>Row 1, Cell 2</td>
+          <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+          <td>Row 2, Cell 1</td>
+          <td>Row 2, Cell 2</td>
+          <td>Row 2, Cell 3</td>
+        </tr>
+        <tr>
+          <td>Row 3, Cell 1</td>
+          <td>Row 3, Cell 2</td>
+          <td>Row 3, Cell 3</td>
+        </tr>
+        <tr>
+          <td>Row 4, Cell 1</td>
+          <td>Row 4, Cell 2</td>
+          <td>Row 4, Cell 3</td>
+        </tr>
+        <tr>
+          <td>Row 5, Cell 1</td>
+          <td>Row 5, Cell 2</td>
+          <td>Row 5, Cell 3</td>
+        </tr>
+        <tr>
+          <td>Row 6, Cell 1</td>
+          <td>Row 6, Cell 2</td>
+          <td>Row 6, Cell 3</td>
+        </tr>
+        <tr>
+          <td>Row 7, Cell 1</td>
+          <td>Row 7, Cell 2</td>
+          <td>Row 7, Cell 3</td>
+        </tr>
+        <tr>
+          <td>Row 8, Cell 1</td>
+          <td>Row 8, Cell 2</td>
+          <td>Row 8, Cell 3</td>
+        </tr>
+        <tr>
+          <td>Row 9, Cell 1</td>
+          <td>Row 9, Cell 2</td>
+          <td>Row 9, Cell 3</td>
+        </tr>
+        <tr>
+          <td>Row 10, Cell 1</td>
+          <td>Row 10, Cell 2</td>
+          <td>Row 10, Cell 3</td>
+        </tr>
+      </table>
+   </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        // $(document).ready(function(){
+        //     $("*").attr('style','color:red;border:1px solid blue;background:yellow;');
+        // });
+
+        $(document).ready(function(){
+            $(this).attr('style','font-size:25px;');
+           $('h1').attr('style',"color:blue");
+           $('p:first').attr('style',"color:red");
+           $("p.p2").attr('style','font-size:30px;');
+           $('[href=""]').attr('style','color:green');
+        $("ul li:nth-child(3)").attr("style","color:red");
+        $("tr:even").attr('style','background-color:gray;')
+        $("tr:odd").attr('style','background-color:silver;')
+        $("h1[class='p2 line1']").attr('style','color:orange;')
+        });
+  
+    </script>
+</body>
+</html>

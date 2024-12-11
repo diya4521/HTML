@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo of Image Style</title>
+    <style>
+        img{
+            -border-radius: 50%;
+            -border: 1px solid #ddd;
+            -padding: 5px;
+            -border-radius: 5px;
+            display: block;
+            margin: auto;
+        }
+
+        .box{
+            -border: 1px solid red;
+            width: 300px;
+            position: relative;
+            -overflow: hidden;
+        }
+        .overlay-text{
+            -border: 1px solid green;
+            position: absolute;
+            left: 0%;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            padding: 15px;
+            background-color: rgba(0,0,0,1);color: #fff;
+            transition: 1s;
+            width: 100%;
+            box-sizing: border-box;
+            z-index: -1;
+        }
+        .box:hover .overlay-text{
+            -bottom: 0;
+            left: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <img src="images/images4.jpg" width="100%" height="" alt="">
+        <div class="overlay-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aliquid itaque tempora velit accusantium non harum exercitationem vitae, ipsum repudiandae sint vero placeat, obcaecati, corrupti neque nisi autem veniam repellat.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aliquid itaque tempora velit accusantium non harum exercitationem vitae, ipsum repudiandae sint vero placeat, obcaecati, corrupti neque nisi autem veniam repellat.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aliquid itaque tempora velit accusantium non harum exercitationem vitae, ipsum repudiandae sint vero placeat, obcaecati, corrupti neque nisi autem veniam repellat.
+        </div>
+    </div>
+   
+   
+</body>
+</html>

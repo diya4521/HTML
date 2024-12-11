@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol li{
+            background-color: lightseagreen;
+            padding: 5px;
+            margin-top: 5px;
+            max-width: 150px;
+            border: 1px solid  rgb(50, 204, 196);
+           
+        }
+
+        ol li:nth-child(even){
+            background-color: rgb(50, 204, 196);
+            border: 1px solid lightseagreen; 
+        }
+    </style>
+</head>
+<body>
+<div>
+   <input type="text" name="" id="deta">
+   <button id="btn">Submit</button>
+   <input type="color" id="clr">
+   <select name="" id="sel">
+    <option value="15px">15px</option>
+    <option value="25px">25px</option>
+    <option value="35px">35px</option>
+    <option value="45px">45px</option>
+
+   </select>
+   <button id="plus">+</button>
+   <input type="text" id="cont" value="1">
+   <button id="minus">-</button>
+
+ <ol>
+
+ </ol>
+ 
+<script
+src="https://code.jquery.com/jquery-3.7.1.min.js"
+integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+crossorigin="anonymous"></script>
+  <script>
+ $("#btn").click (function(){
+    var mybox = $("#deta").val();
+    var csa = $("#clr").val();
+    var op = $("#sel").val();
+    $("#div") .css ('color',csa);
+    $("#div") .css ('font-size',op);
+    $("ol").append("<li>"+mybox+"</li>");
+    
+ });
+
+ $("#sel").change (function(){
+    var op = $("#sel").val();
+    $("#div") .css ('font-size',op);
+ });
+
+
+ $("#plus").click (function(){
+ var pls = $("#cont").val();
+ var pl = parseInt(pls)+1;
+ $("#cont").val(pl);
+ $("#div").css('font-size', pl+"px");
+ });
+
+ $("#minus").click (function(){
+   var pls = $("#cont").val();
+    var pl = parseInt(pls)-1;
+    $("#cont").val(pl);
+    $("#div").css('font-size',pl+"px");
+ });
+$("#cont").focusout(function(){
+   var v = $(this).val();
+   $("#div").css('font-size',$(this).val()+"px");
+});
+ 
+
+  
+  </script>
+</body>
+</html>
+    

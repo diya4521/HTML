@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Of Slider</title>
+    <style>
+        .main_
+        {
+            width: 60%;
+            margin: auto;
+        }
+        #hide{
+            display: none;
+        }
+        #btn{
+            padding: 5px;
+        }
+        #btn_2{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="main_">
+        <img src="images/img_3.jfif" alt="" width="100%"  id="img">
+        <img src="images/img_1.jfif" alt="" width="100%" id="hide">
+
+        <button id="btn_2"> < </button>
+        <button id="btn"> > </button>
+    
+    </div>
+
+   
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+
+    <script>
+        $("#btn").click(function(){
+        $("#img").hide();
+        $("#hide").fadeIn(1500);
+       })
+
+
+       
+       $("#btn_2").click(function(){
+        $("#hide").hide();
+        $("#img").fadeIn(1500);
+       })
+    </script>
+
+    
+</body>
+</html>

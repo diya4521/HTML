@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fadding</title>
+    <style>
+        .main{
+            width: 60%;
+            margin: auto;
+        }
+        .title{
+            padding:10px;
+            background-color: aliceblue;
+        }
+        .content{
+            padding:10px;
+           
+            display:none;
+        }
+        .cl{
+            margin-bottom: 5px;
+            border:1px solid black;
+        }
+        .hide{
+            display: none;
+        }
+       
+    </style>
+</head>
+<body>
+    <img src="images/banner1.png" id="img1" class="img" height="300">
+    <img src="images/brand-2.png" class="hide img" id="img2"  height="300">
+    <button id="slider">Click</button>
+   <div class="main">
+   <div class="cl">
+    <div class="title" onclick="data(1);">Collapse Title 1</div>
+    <div class="content" id="cd1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sapiente commodi dolore at aperiam ipsa impedit, ratione voluptas ipsum cupiditate? Fugiat earum totam laudantium? Quis id neque quo assumenda quas.
+    </div>
+   </div>
+   <div class="cl">
+    <div class="title" onclick="data(2);">Collapse Title 2</div>
+    <div class="content" id="cd2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sapiente commodi dolore at aperiam ipsa impedit, ratione voluptas ipsum cupiditate? Fugiat earum totam laudantium? Quis id neque quo assumenda quas.
+    </div>
+   </div>
+   </div>
+
+    <script src="jquery.min.js"></script>
+    <script>
+       function data(a)
+       {
+        var clId = "#cd"+a;
+        $(".content").removeAttr('style');
+        $(clId).toggle(1000);
+       
+       }
+
+       $("#slider").click(function(){
+        $(".img").hide();
+        $("#img2").fadeIn(1500);
+       })
+    </script>
+ 
+</body>
+</html>

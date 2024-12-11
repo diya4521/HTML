@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body
+        {
+            margin: 0;
+        }
+        .image_gallary{
+            display: flex;
+            justify-content: center;
+        }
+         .box{
+            width: 28%;
+            height: 200px;
+            border: 1px solid #ddd;
+            background-color: rebeccapurple;
+            border-radius: 10px;
+            margin: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px silver;
+            position: relative;
+        }
+
+            @media(max-width:575px){
+                .image_gallary{
+                    flex-direction: column;
+                }
+                 .box{
+                    width: 90%;
+                 }
+            }
+
+    </style>
+</head>
+<body>
+
+    <div class="image_gallary">
+        <div class="box">
+            <img src="images/inner1images.jpg" alt="" width="100%" height="100%">
+        </div>
+        <div class="box">
+            <img src="images/inner1images.jpg" alt="" width="100%"height="100%">
+        </div>
+        <div class="box">
+            <img src="images/inner1images.jpg" alt="" width="100%"height="100%">
+        </div>
+        <div class="box">
+            <img src="images/inner1images.jpg" alt="" width="100%"height="100%">
+        </div>
+    </div>
+    
+    
+    <div class="image_gallary">
+        <div class="box">
+            <img src="images/inner2images.jpg" alt="" width="100%"height="100%">
+        </div>
+        <div class="box">
+            <img src="images/inner2images.jpg" alt="" width="100%"height="100%">
+        </div>
+        <div class="box">
+            <img src="images/inner2images.jpg" alt="" width="100%"height="100%">
+        </div>
+        <div class="box">
+            <img src="images/inner2images.jpg" alt="" width="100%"height="100%">
+        </div>
+    </div>
+    
+</body>
+</html>

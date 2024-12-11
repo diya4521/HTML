@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+</head>
+    <style>
+        body{
+            margin: 0;
+        }
+        .header{
+            background-color: blueviolet;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 20px;
+            font-size: 25px;
+            color:white;
+        }
+        .main{
+            height: 500px;
+            border:1px solid red;
+            display: flex;
+        }
+        .sidebar{
+            border: 1px solid green;
+            width: 40%;
+            height: 100%;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        
+    </style>
+<body>
+    
+    <div class="header">
+        Header
+    </div>
+
+    <div class="main">
+        <div class="sidebar">
+            Side Bar
+        </div>
+        <div class="container">
+            <img src="images/inner1images.jpg" width="200" height="200" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <style>
+        .div1{
+            width: 40%;
+            height: 400px;
+            margin: auto;
+            display: flex;
+        }
+        .left{
+            border: 1px solid lightcoral;
+            border-right:none ;
+            background-color: blueviolet;
+            width: 50%;
+            height: 100%;
+        }
+        .right{
+            border: 1px solid rebeccapurple;
+            border-left:none ;
+            background-color: lightcoral;
+            width: 50%;
+            height: 100%;
+        }
+        #text{
+            border: 1px solid ;
+            padding: 10px;
+            margin-top:100px ;
+            margin-left: 40px;
+        }
+        #text_2,#text_3{
+            border: 1px solid ;
+            padding: 10px;
+            margin-top:10px ;
+            margin-left: 40px;
+        }
+        #submit{
+            margin-top:80px ;
+            margin-left: 100px;
+            border: 1px solid ;
+        }
+        #box{
+            padding: 10px;
+            margin-top: 90px;
+            width: 80%;
+            margin-left: 15px;
+            border: 1px solid ;
+            height: 20px;
+            background-color: white;
+        }
+
+        #box_2{
+            padding: 10px;
+            margin-top:10px ;
+            width: 80%;
+            margin-left: 15px;
+            border: 1px solid ;
+            height: 20px;
+            background-color: white;
+        }
+
+        #box_3{
+            padding: 10px;
+            margin-top:10px ;
+            width: 80%;
+            margin-left: 15px;
+            border: 1px solid ;
+            height: 20px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="div1">
+        <div class="left">
+            <input type="text" placeholder="First Name" id="text">
+            <input type="text" placeholder="Last Name" id="text_2">
+            <input type="text" placeholder="Email" id="text_3">
+            <button id="submit">Submit</button>
+        </div>
+        <div class="right">
+            <div id="box"></div>
+            <div id="box_2"></div>
+            <div id="box_3"></div>
+        </div>
+    </div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  
+  <script>
+
+    $("#submit").click(function(){
+      var a = $("#text").val();
+      $("#box").append(a); 
+
+      var a = $("#text_2").val();
+      $("#box_2").append(a); 
+
+      var a = $("#text_3").val();
+      $("#box_3").append(a); 
+   });
+  </script>
+    
+</body>
+</html>
