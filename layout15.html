@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout 15</title>
+    <style>
+        * {
+            border: 1px solid;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            background-color: #ABA7CC;
+        }
+
+        .main {
+            height: 90vh;
+            -border: 1px solid red;
+            display: flex;
+        }
+
+        .left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 25%;
+            background-color: #ABA7CC;
+        }
+
+        .center {
+            -border: 1px solid red;
+            height: 100%;
+            width: 50%;
+        }
+
+        .pre-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 15%;
+            background-color: #DCDDDF;
+        }
+
+        .body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 68.9%;
+        }
+
+        .post-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 15%;
+            background-color: #DCDDDF;
+        }
+
+
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 25%;
+            background-color: #ABA7CC;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            background-color: #ABA7CC;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        Header
+    </div>
+
+    <div class="main">
+        <div class="left">
+            Laft pane
+        </div>
+        <div class="center">
+            <div class="pre-body">Pre Body</div>
+            <div class="body">Body (content)</div>
+            <div class="post-body">Post Body</div>
+        </div>
+        <div class="right">
+            Right Pane
+        </div>
+    </div>
+
+    <div class="footer"> Footer</div>
+
+</body>
+
+</html>

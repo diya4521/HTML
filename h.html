@@ -1,0 +1,202 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html> -->
+
+
+<style>
+  /* General Container */
+  .co {
+    padding: 40px 10%;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Title Styling */
+  .title h1 {
+    font-size: 36px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+  }
+
+  /* Card Layout */
+  .m {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  /* Individual Course Box */
+  .z {
+    width: 22%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  /* Image Styling */
+  .za img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+
+  /* Text Styling */
+  .zb {
+    padding: 20px;
+  }
+
+  .k {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .j {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+  }
+
+  /* Hover Effect */
+  .z:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Icon Styling */
+  .fa-regular {
+    color: #ff6347;
+  }
+
+  /* Additional Styling for "TCP-FSJ" Span */
+  .t {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 10px;
+    display: inline-block;
+  }
+</style>
+
+
+<div class="co">
+  <div class="title">
+    <center>
+      <h1>Our Courses</h1>
+    </center>
+  </div>
+  <div class="m">
+    <div class="z">
+      <div class="za">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1hMSE6y-I9gAaensXxi0TSHcVgUC0JF0Z3Q&s"
+          width="271px" height="270px" style="border-radius: 10px 10px 0px 0px;" alt="">
+      </div>
+      <div class="zb">
+        <div class="k"><span><b>Java Full Stack Developer</b></span></div>
+        <div class="j">
+          <p>Duration: <i class="fa-regular fa-calendar-check"></i> 15 Months</p>
+          <span class="t">TCP-FSJ</span>
+        </div>
+      </div>
+    </div>
+    <div class="z">
+      <div class="za">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlpsT2bzMwZOMcOn_Few8INpkjDajNZQUPYg&s"
+          width="271px" height="270px" style="border-radius: 10px 10px 0px 0px;" alt="">
+      </div>
+      <div class="zb">
+        <div class="k"><span><b>Python Full Stack Developer</b></span></div>
+        <div class="j">
+          <p>Duration: <i class="fa-regular fa-calendar-check"></i> 12 Months</p>
+          <span class="t">TCP-FSJ</span>
+        </div>
+      </div>
+    </div>
+    <div class="z">
+      <div class="za">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZivtcZNvVTjT30qdfnCXMtQHDZmThWbbBEw&s"
+          width="271px" height="270px" style="border-radius: 10px 10px 0px 0px;" alt="">
+      </div>
+      <div class="zb">
+        <div class="k"><span><b>Node.js Developer</b></span></div>
+        <div class="j">
+          <p>Duration: <i class="fa-regular fa-calendar-check"></i> 10 Months</p>
+          <span class="t">TCP-FSJ</span>
+        </div>
+      </div>
+    </div>
+    <div class="z">
+      <div class="za">
+        <img
+          src="data:image/jpeg;base64,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"
+          width="271px" height="270px" style="border-radius: 10px 10px 0px 0px;" alt="">
+      </div>
+      <div class="zb">
+        <div class="k"><span><b>PHP Full Stack Developer</b></span></div>
+        <div class="j">
+          <p>Duration: <i class="fa-regular fa-calendar-check"></i> 14 Months</p>
+          <span class="t">TCP-FSJ</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

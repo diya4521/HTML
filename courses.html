@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F9FAFB;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .courses-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #FFFFFF;
+        }
+
+        .courses-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .course-card {
+            background: #FFFFFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.5s ease;
+            opacity: 0;
+            transform: translateY(30px);
+            border: 1px solid #E0E0E0;
+        }
+
+        .course-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .course-card h3 {
+            margin: 15px 0 10px;
+            font-size: 1.4em;
+            color: #007BFF;
+        }
+
+        .course-card p {
+            color: #555555;
+            font-size: 0.95em;
+        }
+
+        .text-truncate {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .course-tech-stack {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        .course-tech-stack img {
+            width: 35px;
+            height: 35px;
+        }
+
+        .duration-span {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: background 0.3s ease;
+            display: inline-block;
+        }
+
+        .duration-span:hover {
+            background-color: #0056B3;
+        }
+
+        .explore-more-button {
+            background-color: #007BFF;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 25px;
+            transition: background 2.3s ease;
+        }
+
+        .explore-more-button:hover {
+            background-color: #0056B3;
+        }
+
+        .fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="courses-section">
+        <h2>Our Courses</h2>
+        <div class="courses-container">
+            <div class="course-card ">
+                <img src="images/caa561b2-d6bf-433d-ab83-fa2bb8ea375f.webp" alt="Java Full-Stack">
+                <h3 id="course-1-title" class="text-truncate">Java Full-Stack Developer</h3>
+                <div class="course-tech-stack">
+                    <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/181_Java_logo_logos-512.png"
+                        alt="Java">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Spring_Framework_Logo_2018.svg"
+                        alt="Spring Boot">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React">
+                </div>
+                <p>Master Java Full-Stack Development with hands-on training.</p>
+                <span class="duration-span" id="course-1-duration-span">Duration: 15 Months</span>
+            </div>
+            <div class="course-card">
+                <img src="images/DALL·E 2025-02-13 11.16.04 - An illustration of a Python Full-Stack Developer working at a computer in a modern office. The developer is typing code in Python on a sleek laptop wi.webp"
+                    alt="Python Full-Stack">
+                <h3 id="course-2-title" class="text-truncate">Python Full-Stack Developer</h3>
+                <div class="course-tech-stack">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Django_logo.svg" alt="Django">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" alt="Vue.js">
+                </div>
+                <p>Learn Python, Django & Vue.js to become a full-stack developer.</p>
+                <span class="duration-span" id="course-2-duration-span">Duration: 15 Months</span>
+            </div>
+            <div class="course-card">
+                <img src="images/DALL·E 2025-02-13 11.16.05 - An illustration of a Data Scientist with a focus on AI, analyzing data on a computer. The workspace is modern and clean, with dual screens showing gra.webp"
+                    alt="Data Science">
+                <h3 id="course-3-title" class="text-truncate">Data Science with AI</h3>
+                <div class="course-tech-stack">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python">
+                    <img src="https://e7.pngegg.com/pngimages/67/853/png-clipart-machine-learning-computer-icons-deep-learning-bright-brain-logo-miscellaneous-text.png"
+                        alt="Machine Learning">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgdKsKAwvmZegZ775zbgPCXMQ3JAE50Oc53w&s"
+                        alt="AI">
+                </div>
+                <p>Unlock the power of AI with our Data Science course.</p>
+                <span class="duration-span" id="course-3-duration-span">Duration: 12 Months</span>
+            </div>
+        </div>
+        <button class="explore-more-button">Explore More Courses</button>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Modify the course titles and durations dynamically
+            document.getElementById("course-1-title").innerText = "Advanced Java Full-Stack Developer";
+            document.getElementById("course-1-duration-span").innerText = "Duration: 15 Months";
+
+            document.getElementById("course-2-title").innerText = "Master Python Full-Stack Developer";
+            document.getElementById("course-2-duration-span").innerText = "Duration: 15 Months";
+
+            document.getElementById("course-3-title").innerText = "AI & Data Science Specialist";
+            document.getElementById("course-3-duration-span").innerText = "Duration: 12 Months";
+
+            const courseCards = document.querySelectorAll(".course-card");
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("fade-in");
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            courseCards.forEach(card => {
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+
+</html>
